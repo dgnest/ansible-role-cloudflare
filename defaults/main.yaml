@@ -1,0 +1,8 @@
+---
+# defaults file for cloudflare
+
+# cloudflare_deployment_apps update code deployment
+
+common_package_dependencies:
+  - "wget"
+  - "curl"

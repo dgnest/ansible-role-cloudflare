@@ -5,6 +5,6 @@ cloudflare_purge_zone: CLOUDFLARE_PURGE_ZONE
 cloudflare_purge_email: CLOUDFLARE_EMAIL
 cloudflare_purge_key: CLOUDFLARE_KEY
 
-common_package_dependencies:
+cloudflare_package_dependencies:
   - "wget"
   - "curl"

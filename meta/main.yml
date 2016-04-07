@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: Luis Mayta
-  description: Ansible role to install Cloudflare
+  description: Ansible role to services Cloudflare
   company: Hadenlabs
   version: 0.0.1
   license: Mit

@@ -5,6 +5,21 @@ cloudflare_purge_zone: CLOUDFLARE_PURGE_ZONE
 cloudflare_purge_email: CLOUDFLARE_EMAIL
 cloudflare_purge_key: CLOUDFLARE_KEY
 
+cloudflare_purge_body:
+  purge_everything: true
+
 cloudflare_package_dependencies:
   - "wget"
   - "curl"
+
+cloudflare_dependencies:
+  - name: "python2.7-dev"
+    version: ""
+  - name: "python-dev"
+    version: ""
+  - name: "python-pip"
+  - name: "git"
+
+cloudflare_pip_dependencies:
+  - name: "httplib2"
+    version: "0.7.7"

@@ -1,11 +1,13 @@
 ---
 # tasks file for ansible-cloudflare-purge
 
-- name: Purge CloudFlare caches
-  uri: >
-    body='{{cloudflare_purge_body|to_json}}'
-    url=https://api.cloudflare.com/client/v4/zones/{{cloudflare_purge_zone}}/purge_cache
-    method=DELETE
-    body_format=json
-    HEADER_X-Auth-Email='{{cloudflare_purge_email}}'
-    HEADER_X-Auth-Key='{{cloudflare_purge_key}}'
+- name: Purge CloudFlare caches all
+  uri:
+    url: 'https://api.cloudflare.com/client/v4/zones/{{cloudflare_purge_zone}}/purge_cache'
+    method: 'DELETE'
+    body: '{{ cloudflare_purge_body | to_json }}'
+    body_format: json
+    HEADER_Content-Type: "application/json"
+    HEADER_X-Auth-Email: '{{cloudflare_purge_email}}'
+    HEADER_X-Auth-Key: '{{cloudflare_purge_key}}'
+    validate_certs: no

@@ -1,9 +1,8 @@
 # Ansible Role Cloudflare
 
 <span class="badges" align="center">
-[![Build Status](https://travis-ci.org/hadenlabs/ansible-role-cloudflare.svg)](https://travis-ci.org/hadenlabs/ansible-role-cloudflare)
-[![Stories in Ready](https://badge.waffle.io/hadenlabs/ansible-role-cloudflare.svg?label=ready&title=Ready)](http://waffle.io/hadenlabs/ansible-role-cloudflare)
-[![GitHub issues](https://img.shields.io/github/issues/hadenlabs/ansible-role-cloudflare.svg)](https://github.com/hadenlabs/ansible-role-cloudflare/issues)
+[![Build Status](https://travis-ci.org/dgnest/ansible-role-cloudflare.svg)](https://travis-ci.org/dgnest/ansible-role-cloudflare)
+[![GitHub issues](https://img.shields.io/github/issues/dgnest/ansible-role-cloudflare.svg)](https://github.com/dgnest/ansible-role-cloudflare/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
 
@@ -44,7 +43,7 @@ To install a specific version:
 
     - hosts: servers
       roles:
-         - { role: hadenlabs.cloudflare }
+         - { role: dgnest.cloudflare }
 
 
 ## Changelog
@@ -57,12 +56,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Luis Mayta][link-luis]
+Made with love :heart: by Dgnest
+
 - [All Contributors][link-contributors]
 
 
 <!-- Other -->
 
 [link-cloudflare]: https://www.cloudflare.com
-[link-luis]: https://github.com/luismayta
-[link-contributors]: contributors
+[link-contributors]: AUTHORS

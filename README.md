@@ -56,7 +56,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-Made with love :heart: by Dgnest
+Made with :heart: ️:coffee:️ and :pizza: by [dgnest][link-company].
 
 - [All Contributors][link-contributors]
 
@@ -64,4 +64,6 @@ Made with love :heart: by Dgnest
 <!-- Other -->
 
 [link-cloudflare]: https://www.cloudflare.com
+[link-luis]: https://github.com/luismayta
 [link-contributors]: AUTHORS
+[link-company]: https://github.com/dgnest

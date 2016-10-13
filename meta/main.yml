@@ -3,8 +3,8 @@
 galaxy_info:
   author: Luis Mayta
   description: Ansible role to services Cloudflare
-  company: Hadenlabs
-  version: 1.0.1
+  company: Dgnest
+  version: 1.0.2
   license: Mit
   min_ansible_version: 1.2
   platforms:

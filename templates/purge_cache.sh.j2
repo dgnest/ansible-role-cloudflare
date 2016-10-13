@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/{{cloudflare_purge_zone}}/purge_cache" \
+-H "X-Auth-Email: {{cloudflare_purge_email}}" \
+-H "X-Auth-Key: {{cloudflare_purge_key}}" \
+-H "Content-Type: application/json" \
+--data '{"purge_everything":true}'

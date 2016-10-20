@@ -5,10 +5,10 @@
 _cloudflare_path: "/home/{{ user }}/cloudflare"
 _cloudflare_purge_file: "{{ _cloudflare_path }}/purge_cache.sh"
 
+
 _cloudflare_create_files:
   - path: "{{ _cloudflare_path }}"
     state: directory
-    # owner: "{{ user }}"
 
 
 _cloudflare:

@@ -6,6 +6,8 @@
 
 - include: files.yaml
 
+- include: templates.yaml
+
 - include: dependences.yaml
 
 - include: pip.yaml

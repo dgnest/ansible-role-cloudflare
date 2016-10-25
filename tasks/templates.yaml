@@ -1,0 +1,8 @@
+---
+
+- name: copy templates
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items: _cloudflare_templates
+  when: _cloudflare_templates is defined

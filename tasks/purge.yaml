@@ -2,4 +2,4 @@
 # tasks file for ansible-cloudflare-purge
 
 - name: Purge CloudFlare caches all
-  command: {{_cloudflare_purge_file}}
+  command: "{{ _cloudflare_purge_file }}"

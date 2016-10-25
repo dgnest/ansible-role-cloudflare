@@ -6,7 +6,6 @@
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
 
-
 Installs and configures [cloudflare][link-cloudflare] on a host.
 
 ## Requirements

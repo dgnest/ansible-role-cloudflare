@@ -3,6 +3,8 @@
 - name: copy templates
   template:
     src: "{{ item.src }}"
+    owner: "{{ item.owner }}"
+    mode: "{{ item.mode }}"
     dest: "{{ item.dest }}"
-  with_items: _cloudflare_templates
-  when: _cloudflare_templates is defined
+  with_items: _cloudflare.templates
+  when: _cloudflare.templates is defined

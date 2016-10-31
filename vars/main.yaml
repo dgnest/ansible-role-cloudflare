@@ -8,10 +8,13 @@ _cloudflare_purge_file: "{{ _cloudflare_path }}/purge_cache.sh"
 
 _cloudflare_create_files:
   - path: "{{ _cloudflare_path }}"
+    owner: "{{ user }}"
     state: directory
 
 
 _cloudflare:
   templates:
     - src: "purge_cache.sh.j2"
+      owner: "{{ user }}"
+      mode: '0755'
       dest: "{{ _cloudflare_purge_file }}"

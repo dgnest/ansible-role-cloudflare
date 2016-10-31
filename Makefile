@@ -17,6 +17,7 @@ GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
 GRIP = $(shell) $(SCRIPT_DIR)/grip.sh
 PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
 INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
+LINTCODE = $(shell) $(SCRIPT_DIR)/lintcode.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
@@ -65,6 +66,10 @@ grip:
 maintainer-clean: distclean
 		rm -rf $(BIN_DIR)
 		rm -rf $(ROOT_DIR)/lib/
+
+
+lintcode:
+		$(LINTCODE)
 
 
 sync:

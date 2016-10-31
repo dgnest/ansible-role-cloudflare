@@ -3,6 +3,7 @@
   sudo: yes
   file:
     path: "{{ item.path }}"
+    owner: "{{ item.owner }}"
     state: "{{ item.state }}"
   with_items: _cloudflare_create_files
   when: _cloudflare_create_files is defined
@@ -11,6 +12,7 @@
   sudo: yes
   file:
     path: "{{ item.path }}"
+    owner: "{{ item.owner }}"
     state: "{{ item.state }}"
   with_items: cloudflare_create_files
   when: cloudflare_create_files is defined

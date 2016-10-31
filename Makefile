@@ -73,3 +73,7 @@ sync:
 
 watch:
 		$(WATCH)
+
+
+test:
+		$(TEST)

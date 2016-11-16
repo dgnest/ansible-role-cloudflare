@@ -33,45 +33,45 @@ windows:
       layout: main-vertical
       panes:
         - editor:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
             - <%= ENV["EDITOR"] %>
         - docker:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
   - python:
       layout: main-vertical
       panes:
         - python:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
             - ipython
   - databases:
       layout: main-vertical
       panes:
         - postgresql:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
         - shell:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
   - docker:
       layout: main-vertical
       panes:
         - docker:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
         - shell:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
   - tools:
       layout: main-vertical
       panes:
         - watch:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
             - make watch
         - grip:
-            - pyenv activate ansible-role-cloudlfare
-            - gvm pkgset use ansible-role-cloudlfare
+            - pyenv activate ansible-role-cloudflare
+            - gvm pkgset use ansible-role-cloudflare
             - make grip

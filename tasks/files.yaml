@@ -5,7 +5,7 @@
     path: "{{ item.path }}"
     owner: "{{ item.owner }}"
     state: "{{ item.state }}"
-  with_items: _cloudflare_create_files
+  with_items: "{{ _cloudflare_create_files | default({}) }}"
   when: _cloudflare_create_files is defined
 
 - name: Create files
@@ -14,5 +14,5 @@
     path: "{{ item.path }}"
     owner: "{{ item.owner }}"
     state: "{{ item.state }}"
-  with_items: cloudflare_create_files
+  with_items: "{{ cloudflare_create_files | default({}) }}"
   when: cloudflare_create_files is defined

@@ -18,3 +18,16 @@ _cloudflare:
       owner: "{{ user }}"
       mode: '0755'
       dest: "{{ _cloudflare_purge_file }}"
+
+
+_cloudflare_packages:
+  - "wget"
+  - "curl"
+  - "python2.7-dev"
+  - "python-dev"
+  - "python-pip"
+  - "git"
+
+_cloudflare_pip_dependencies:
+  - name: "httplib2"
+    version: "0.7.7"

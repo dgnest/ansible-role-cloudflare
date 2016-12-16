@@ -1,6 +1,6 @@
 ---
 - name: Create files default
-  sudo: yes
+  become: true
   file:
     path: "{{ item.path }}"
     owner: "{{ item.owner }}"
@@ -9,7 +9,7 @@
   when: _cloudflare_create_files is defined
 
 - name: Create files
-  sudo: yes
+  become: true
   file:
     path: "{{ item.path }}"
     owner: "{{ item.owner }}"

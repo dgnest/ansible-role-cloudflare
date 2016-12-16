@@ -5,7 +5,7 @@
 
 - name: Common stuff for all the server
   hosts: all
-  sudo: yes
+  sudo: true
   gather_facts: no
   roles:
     - luismayta.common

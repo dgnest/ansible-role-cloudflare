@@ -6,5 +6,5 @@
     owner: "{{ item.owner }}"
     mode: "{{ item.mode }}"
     dest: "{{ item.dest }}"
-  with_items: _cloudflare.templates
+  with_items: "{{_cloudflare.templates | default({})}}"
   when: _cloudflare.templates is defined

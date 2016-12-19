@@ -16,12 +16,12 @@ CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
 GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
 GRIP = $(shell) $(SCRIPT_DIR)/grip.sh
 PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
+SETUP = $(shell) $(SCRIPT_DIR)/setup.sh
 INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
 LINTCODE = $(shell) $(SCRIPT_DIR)/lintcode.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
-
 
 ansible_provision:
 	$(ANSIBLE_PROVISION)
@@ -70,16 +70,16 @@ maintainer-clean: distclean
 
 
 lintcode:
-		$(LINTCODE)
+	$(LINTCODE)
 
 
 sync:
-		$(SYNC)
+	$(SYNC)
 
 
 watch:
-		$(WATCH)
+	$(WATCH)
 
 
 test:
-		$(TEST)
+	$(TEST)
